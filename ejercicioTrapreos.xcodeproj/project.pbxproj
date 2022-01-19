@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BB42D64279829BE00586153 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB42D63279829BE00586153 /* TableViewController.swift */; };
 		6BE31618279822E8007D4A37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE31617279822E8007D4A37 /* AppDelegate.swift */; };
 		6BE3161A279822E8007D4A37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE31619279822E8007D4A37 /* SceneDelegate.swift */; };
 		6BE3161C279822E8007D4A37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3161B279822E8007D4A37 /* ViewController.swift */; };
 		6BE3161F279822E8007D4A37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE3161D279822E8007D4A37 /* Main.storyboard */; };
 		6BE31621279822EB007D4A37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE31620279822EB007D4A37 /* Assets.xcassets */; };
 		6BE31624279822EB007D4A37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE31622279822EB007D4A37 /* LaunchScreen.storyboard */; };
+		6BE3162C27982337007D4A37 /* CeldaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE3162B27982337007D4A37 /* CeldaTableViewCell.swift */; };
+		D19C8DD49F23F128253FCA66 /* Pods_ejercicioTrapreos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4A078213517AA8FC31DF00 /* Pods_ejercicioTrapreos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C4A078213517AA8FC31DF00 /* Pods_ejercicioTrapreos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ejercicioTrapreos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB42D63279829BE00586153 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		6BE31614279822E8007D4A37 /* ejercicioTrapreos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ejercicioTrapreos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE31617279822E8007D4A37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BE31619279822E8007D4A37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		6BE31620279822EB007D4A37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BE31623279822EB007D4A37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BE31625279822EB007D4A37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE3162B27982337007D4A37 /* CeldaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaTableViewCell.swift; sourceTree = "<group>"; };
+		8FEDABB2FFB2041622478C5A /* Pods-ejercicioTrapreos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ejercicioTrapreos.debug.xcconfig"; path = "Target Support Files/Pods-ejercicioTrapreos/Pods-ejercicioTrapreos.debug.xcconfig"; sourceTree = "<group>"; };
+		E61B72C4058335CA4E3B3533 /* Pods-ejercicioTrapreos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ejercicioTrapreos.release.xcconfig"; path = "Target Support Files/Pods-ejercicioTrapreos/Pods-ejercicioTrapreos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D19C8DD49F23F128253FCA66 /* Pods_ejercicioTrapreos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64F0204868BE9DFBEA044BF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C4A078213517AA8FC31DF00 /* Pods_ejercicioTrapreos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6BE3160B279822E8007D4A37 = {
 			isa = PBXGroup;
 			children = (
 				6BE31616279822E8007D4A37 /* ejercicioTrapreos */,
 				6BE31615279822E8007D4A37 /* Products */,
+				E3B2B02B2596549368395575 /* Pods */,
+				64F0204868BE9DFBEA044BF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +82,19 @@
 				6BE31620279822EB007D4A37 /* Assets.xcassets */,
 				6BE31622279822EB007D4A37 /* LaunchScreen.storyboard */,
 				6BE31625279822EB007D4A37 /* Info.plist */,
+				6BE3162B27982337007D4A37 /* CeldaTableViewCell.swift */,
+				6BB42D63279829BE00586153 /* TableViewController.swift */,
 			);
 			path = ejercicioTrapreos;
+			sourceTree = "<group>";
+		};
+		E3B2B02B2596549368395575 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FEDABB2FFB2041622478C5A /* Pods-ejercicioTrapreos.debug.xcconfig */,
+				E61B72C4058335CA4E3B3533 /* Pods-ejercicioTrapreos.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BE31628279822EB007D4A37 /* Build configuration list for PBXNativeTarget "ejercicioTrapreos" */;
 			buildPhases = (
+				DBA53D3DDAD56F32CA90B0EC /* [CP] Check Pods Manifest.lock */,
 				6BE31610279822E8007D4A37 /* Sources */,
 				6BE31611279822E8007D4A37 /* Frameworks */,
 				6BE31612279822E8007D4A37 /* Resources */,
+				742F0F7E726482EE3EE94C57 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +164,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		742F0F7E726482EE3EE94C57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ejercicioTrapreos/Pods-ejercicioTrapreos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ejercicioTrapreos/Pods-ejercicioTrapreos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ejercicioTrapreos/Pods-ejercicioTrapreos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBA53D3DDAD56F32CA90B0EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ejercicioTrapreos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6BE31610279822E8007D4A37 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +214,8 @@
 				6BE3161C279822E8007D4A37 /* ViewController.swift in Sources */,
 				6BE31618279822E8007D4A37 /* AppDelegate.swift in Sources */,
 				6BE3161A279822E8007D4A37 /* SceneDelegate.swift in Sources */,
+				6BB42D64279829BE00586153 /* TableViewController.swift in Sources */,
+				6BE3162C27982337007D4A37 /* CeldaTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +359,7 @@
 		};
 		6BE31629279822EB007D4A37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FEDABB2FFB2041622478C5A /* Pods-ejercicioTrapreos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +379,7 @@
 		};
 		6BE3162A279822EB007D4A37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E61B72C4058335CA4E3B3533 /* Pods-ejercicioTrapreos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
